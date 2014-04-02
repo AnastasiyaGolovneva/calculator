@@ -61,11 +61,27 @@ namespace CalculatorTest
         //
         #endregion
 
+        protected Calcul newCalcul;
+
+        [TestInitialize()]
+        public void MyTestInitialize() 
+        {
+            newCalcul = new Calcul();
+        }
+
         [TestMethod]
         public void Calctlnit()
-        {
-            Calcul newCalcul = new Calcul();
+        {            
             double expected = 0;
+            double actual = newCalcul.getData();
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void CalctSetGet()
+        {
+            newCalcul.setData(2);
+            double expected = 2;
             double actual = newCalcul.getData();
             Assert.AreEqual(expected, actual);
         }

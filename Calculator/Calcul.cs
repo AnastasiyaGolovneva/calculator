@@ -15,7 +15,11 @@ namespace Calculator
         }
         public double getData()
         {
-            return 0;
+            return data;
+        }
+        public void setData(double d)
+        {
+            data = d;
         }
     }
 }

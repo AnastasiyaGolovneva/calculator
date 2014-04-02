@@ -102,5 +102,14 @@ namespace CalculatorTest
             double actual = newCalcul.minus(5);
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void CalctMinus2()
+        {
+            newCalcul.setData(8);
+            double expected = 3;
+            double actual = newCalcul.minus(5);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

@@ -31,7 +31,7 @@ namespace Calculator
         }
         public double multi(double number)
         {
-            return 24;
+            return data*number;
         }
     }
 }

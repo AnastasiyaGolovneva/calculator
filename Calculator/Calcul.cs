@@ -21,5 +21,9 @@ namespace Calculator
         {
             data = d;
         }
+        public double plus(double number)
+        {
+            return data + number;
+        }
     }
 }

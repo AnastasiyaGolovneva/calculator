@@ -85,5 +85,13 @@ namespace CalculatorTest
             double actual = newCalcul.getData();
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void CalctPlus()
+        {
+            double expected = newCalcul.getData() + 5;
+            double actual = newCalcul.plus(5);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

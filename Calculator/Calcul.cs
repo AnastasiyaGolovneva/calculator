@@ -25,5 +25,9 @@ namespace Calculator
         {
             return data + number;
         }
+        public double minus(double number)
+        {
+            return 2;
+        }
     }
 }

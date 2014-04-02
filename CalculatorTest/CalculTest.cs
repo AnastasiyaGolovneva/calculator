@@ -70,7 +70,7 @@ namespace CalculatorTest
         }
 
         [TestMethod]
-        public void Calctlnit()
+        public void CalctInit()
         {            
             double expected = 0;
             double actual = newCalcul.getData();
@@ -91,6 +91,15 @@ namespace CalculatorTest
         {
             double expected = newCalcul.getData() + 5;
             double actual = newCalcul.plus(5);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void CalctMinus()
+        {
+            newCalcul.setData(7);
+            double expected = 2;
+            double actual = newCalcul.minus(5);
             Assert.AreEqual(expected, actual);
         }
     }

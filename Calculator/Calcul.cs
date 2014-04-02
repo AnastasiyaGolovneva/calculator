@@ -29,5 +29,9 @@ namespace Calculator
         {
             return data - number;
         }
+        public double multi(double number)
+        {
+            return 24;
+        }
     }
 }

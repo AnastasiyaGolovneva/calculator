@@ -111,5 +111,16 @@ namespace CalculatorTest
             double actual = newCalcul.minus(5);
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void CalctMulti()
+        {
+            newCalcul.setData(8);
+            double expected = 24;
+            double actual = newCalcul.multi(3);
+            Assert.AreEqual(expected, actual);
+        }
+
+       
     }
 }

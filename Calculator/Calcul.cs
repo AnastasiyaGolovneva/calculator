@@ -33,5 +33,9 @@ namespace Calculator
         {
             return data*number;
         }
+        public double div(double number)
+        {
+            return 4;
+        }
     }
 }

@@ -55,6 +55,10 @@ namespace Calculator
         {
             return Math.Tan(data);
         }
+        public double sqrt()
+        {
+            return Math.Sqrt(data);
+        }
 
     }
 }

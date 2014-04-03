@@ -190,6 +190,15 @@ namespace CalculatorTest
             double actual = newCalcul.tang();
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void CalctSqrt()
+        {
+            newCalcul.setData(100);
+            double expected =10;
+            double actual = newCalcul.sqrt();
+            Assert.AreEqual(expected, actual);
+        }
        
     }
 }

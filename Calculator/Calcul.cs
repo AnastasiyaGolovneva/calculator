@@ -47,5 +47,10 @@ namespace Calculator
         {
             return Math.Cos(data);
         }
+        public double sin()
+        {
+            return Math.Sin(data);
+        }
+
     }
 }

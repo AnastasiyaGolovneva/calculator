@@ -172,6 +172,15 @@ namespace CalculatorTest
             double actual = newCalcul.cos();
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void CalctSin()
+        {
+            newCalcul.setData(Math.PI / 4);
+            double expected = Math.Sin(Math.PI / 4);
+            double actual = newCalcul.sin();
+            Assert.AreEqual(expected, actual);
+        }
        
     }
 }

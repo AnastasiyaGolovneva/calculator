@@ -242,8 +242,19 @@ namespace CalculatorTest
         public void CalctPow()
         {
             newCalcul.setData(3);
-            double expected = Math.Pow(3,4);
+            double expected = Math.Pow(3, 4);
             double actual = newCalcul.pow(4);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void CalctExpress01()
+        {
+            newCalcul.setData(4);
+            double expected = Math.Log(4) / Math.Exp(4);
+            Calcul c1 = new Calcul(newCalcul.log());
+            Calcul c2 = new Calcul(newCalcul.exp());
+            double actual = c1.div(c2.getData());
             Assert.AreEqual(expected, actual);
         }
 

@@ -269,6 +269,17 @@ namespace CalculatorTest
             Assert.AreEqual(expected, actual);
         }
 
+        [TestMethod]
+        public void CalctExpress03()
+        {
+            newCalcul.setData(4);
+            double expected = 4*5 + Math.Cos((double)96/34);
+            Calcul c1 = new Calcul(newCalcul.multi(5));
+            Calcul c2 = new Calcul((new Calcul(96)).div(34));
+            double actual = c1.plus(c2.cos());
+            Assert.AreEqual(expected, actual);
+        }
+
         
        
     }

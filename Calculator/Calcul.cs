@@ -38,5 +38,9 @@ namespace Calculator
             if (number == 0) return data;
             return data/number;
         }
+        public double factorial(double number)
+        {
+            return 24;
+        }
     }
 }

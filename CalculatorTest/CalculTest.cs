@@ -147,6 +147,14 @@ namespace CalculatorTest
             double actual = newCalcul.div(0);
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void CalctFactorial()
+        {
+            double expected = 24;
+            double actual = newCalcul.factorial(4);
+            Assert.AreEqual(expected, actual);
+        }
        
     }
 }

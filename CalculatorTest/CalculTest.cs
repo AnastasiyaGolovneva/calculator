@@ -258,6 +258,17 @@ namespace CalculatorTest
             Assert.AreEqual(expected, actual);
         }
 
+        [TestMethod]
+        public void CalctExpress02()
+        {
+            newCalcul.setData(81);
+            double expected = 81;
+            Calcul c1 = new Calcul(newCalcul.sqrt());
+            Calcul c2 = new Calcul(c1.square());
+            double actual = c2.getData();
+            Assert.AreEqual(expected, actual);
+        }
+
         
        
     }

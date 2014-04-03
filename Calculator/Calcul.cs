@@ -40,7 +40,8 @@ namespace Calculator
         }
         public double factorial(double number)
         {
-            return 24;
+            if (number == 0) return 1;
+            else return number * factorial(number - 1);
         }
     }
 }

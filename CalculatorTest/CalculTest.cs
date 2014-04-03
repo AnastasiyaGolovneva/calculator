@@ -138,6 +138,15 @@ namespace CalculatorTest
             double actual = newCalcul.div(2);
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void CalctDiv2()
+        {
+            newCalcul.setData(8);
+            double expected = 8;
+            double actual = newCalcul.div(0);
+            Assert.AreEqual(expected, actual);
+        }
        
     }
 }

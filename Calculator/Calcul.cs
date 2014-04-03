@@ -35,7 +35,8 @@ namespace Calculator
         }
         public double div(double number)
         {
-            return 4;
+            if (number == 0) return data;
+            return data/number;
         }
     }
 }

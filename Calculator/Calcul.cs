@@ -71,6 +71,14 @@ namespace Calculator
         {
             return data*data;
         }
+        public double log()
+        {
+            return Math.Log(data);
+        }
+        public double pow(double number)
+        {
+            return Math.Pow(data, number);
+        }
 
     }
 }

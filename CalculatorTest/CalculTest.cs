@@ -229,6 +229,24 @@ namespace CalculatorTest
             Assert.AreEqual(expected, actual);
         }
 
+        [TestMethod]
+        public void CalctLog()
+        {
+            newCalcul.setData(3);
+            double expected = Math.Log(3);
+            double actual = newCalcul.log();
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void CalctPow()
+        {
+            newCalcul.setData(3);
+            double expected = Math.Pow(3,4);
+            double actual = newCalcul.pow(4);
+            Assert.AreEqual(expected, actual);
+        }
+
         
        
     }

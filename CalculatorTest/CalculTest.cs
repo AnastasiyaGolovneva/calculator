@@ -163,6 +163,15 @@ namespace CalculatorTest
             double actual = newCalcul.factorial(5);
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void CalctCos()
+        {
+            newCalcul.setData(Math.PI / 4);
+            double expected = Math.Cos(Math.PI/4);
+            double actual = newCalcul.cos();
+            Assert.AreEqual(expected, actual);
+        }
        
     }
 }

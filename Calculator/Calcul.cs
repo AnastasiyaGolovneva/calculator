@@ -13,6 +13,10 @@ namespace Calculator
         {
             data = 0;            
         }
+        public Calcul(double d)
+        {
+            data = d;
+        }
         public double getData()
         {
             return data;
@@ -62,6 +66,10 @@ namespace Calculator
         public double exp()
         {
             return Math.Exp(data);
+        }
+        public double square()
+        {
+            return data*data;
         }
 
     }

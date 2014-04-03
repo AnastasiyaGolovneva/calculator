@@ -208,6 +208,28 @@ namespace CalculatorTest
             double actual = newCalcul.exp();
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void CalctCos2PlusSin2()
+        {
+            newCalcul.setData(Math.PI / 3);
+            double expected = 1.0;
+            Calcul c1 = new Calcul(newCalcul.cos());
+            Calcul c2 = new Calcul(newCalcul.sin());
+            double actual = c1.square() + c2.square();
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void CalctSquare()
+        {
+            newCalcul.setData(3);
+            double expected = 9;
+            double actual = newCalcul.square();
+            Assert.AreEqual(expected, actual);
+        }
+
+        
        
     }
 }

@@ -199,6 +199,15 @@ namespace CalculatorTest
             double actual = newCalcul.sqrt();
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void CalctExp()
+        {
+            newCalcul.setData(3);
+            double expected = Math.Exp(3);
+            double actual = newCalcul.exp();
+            Assert.AreEqual(expected, actual);
+        }
        
     }
 }

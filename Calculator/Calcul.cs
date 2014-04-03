@@ -59,6 +59,10 @@ namespace Calculator
         {
             return Math.Sqrt(data);
         }
+        public double exp()
+        {
+            return Math.Exp(data);
+        }
 
     }
 }

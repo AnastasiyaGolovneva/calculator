@@ -181,6 +181,15 @@ namespace CalculatorTest
             double actual = newCalcul.sin();
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void CalctTang()
+        {
+            newCalcul.setData(Math.PI / 4);
+            double expected = Math.Tan(Math.PI / 4);
+            double actual = newCalcul.tang();
+            Assert.AreEqual(expected, actual);
+        }
        
     }
 }

@@ -51,6 +51,10 @@ namespace Calculator
         {
             return Math.Sin(data);
         }
+        public double tang()
+        {
+            return Math.Tan(data);
+        }
 
     }
 }
